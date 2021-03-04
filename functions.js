@@ -61,3 +61,15 @@ function setH3() {
     checkedH3 = !checkedH3;
     content.style.fontSize = checkedH3 ?'1.17em' : '1.17em';
 }
+
+function alignLeft() {
+    content.style.textAlign = 'left';
+}
+
+function alignJustify() {
+    content.style.textAlign = 'justify';
+}
+
+function alignRight() {
+    content.style.textAlign = 'right';
+}
