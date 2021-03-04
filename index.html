@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./asserts/icons.css">
+        <title>Rich text editor</title>
+        <link rel="shortcut icon" href="./asserts/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./asserts/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="content">
+            <div class="options">
+                <i class="gg-undo" onclick="undo()"></i>
+                <i class="gg-redo" onclick="redo()"></i>
+                <p onclick="bold()">B</p>
+                <i class="gg-format-italic" onclick="italic()"></i>
+                <i class="gg-format-underline" onclick="underline()"></i>
+                <p onclick="setH1()">H1</p>
+                <p onclick="setH2()">H2</p>
+                <p onclick="setH3()">H3</p>
+                <i class="gg-layout-list"></i>
+                <i class="gg-format-left"></i>
+                <i class="gg-format-justify"></i>
+                <i class="gg-format-right"></i>
+            </div>
+            <div id="content" contenteditable="true"></div>
+        </div>
+    </body>
+</html>
+
+<script src="./functions.js"></script>

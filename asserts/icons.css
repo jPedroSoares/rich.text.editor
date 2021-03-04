@@ -1,0 +1,205 @@
+.gg-undo {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgb(38 158 188);
+    border-left-color: transparent;
+    border-radius: 100px
+}
+   
+.gg-undo::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid rgb(38 158 188);
+    border-left: 2px solid rgb(38 158 188);
+    top: -3px;
+    left: -1px;
+    transform: rotate(-68deg)
+}
+
+.gg-redo {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgb(38 158 188);
+    border-right-color: transparent;
+    border-radius: 100px
+}
+   
+.gg-redo::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid rgb(38 158 188);
+    border-right: 2px solid rgb(38 158 188);
+    top: -3px;
+    right: -1px;
+    transform: rotate(68deg)
+}
+
+.gg-format-italic {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: skewX(-20deg) scale(var(--ggs,1));
+    width: 6px;
+    height: 12px;
+    border-top: 2px solid;
+    border-bottom: 2px solid
+}
+   
+.gg-format-italic::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    height: 10px;
+    width: 2px;
+    background: currentColor;
+    left: 2px;
+    top: -2px
+} 
+
+.gg-format-underline {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 12px;
+    height: 12px;
+    border: 2px solid;
+    border-top: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px
+}
+   
+.gg-format-underline::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 12px;
+    height: 2px;
+    background: currentColor;
+    left: -2px;
+    bottom: -6px
+}
+
+.gg-layout-list {
+    transform: scale(var(--ggs,1))
+}
+   
+.gg-layout-list,
+.gg-layout-list::after,
+.gg-layout-list::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 2px;
+    border-left: 6px double;
+    border-right: 4px solid
+}
+   
+.gg-layout-list::after,
+.gg-layout-list::before {
+    content: "";
+    position: absolute;
+    left: -6px
+}
+   
+.gg-layout-list::after {
+    bottom: 4px
+}
+   
+.gg-layout-list::before {
+    top: 4px
+}
+
+.gg-format-left,
+.gg-format-left::before {
+ display: block;
+ box-sizing: border-box;
+ height: 2px;
+ background: currentColor;
+ border-radius: 3px;
+ box-shadow: 0 8px 0
+}
+
+.gg-format-left {
+ margin-top: -11px;
+ position: relative;
+ transform: scale(var(--ggs,1));
+ width: 16px
+}
+
+.gg-format-left::before {
+ content: "";
+ position: absolute;
+ width: 10px;
+ top: 4px;
+ left: 0
+}
+
+.gg-format-justify,
+.gg-format-justify::before {
+ display: block;
+ box-sizing: border-box;
+ width: 16px;
+ height: 2px;
+ border-radius: 3px;
+ background: currentColor;
+ box-shadow: 0 8px 0
+}
+
+.gg-format-justify {
+ margin-top: -11px;
+ transform: scale(var(--ggs,1));
+ position: relative
+}
+
+.gg-format-justify::before {
+ content: "";
+ position: absolute;
+ top: 4px;
+ left: 0
+} 
+
+.gg-format-right,
+.gg-format-right::before {
+ display: block;
+ box-sizing: border-box;
+ height: 2px;
+ background: currentColor;
+ border-radius: 3px;
+ box-shadow: 0 8px 0
+}
+
+.gg-format-right {
+ margin-top: -11px;
+ position: relative;
+ transform: scale(var(--ggs,1));
+ width: 16px
+}
+
+.gg-format-right::before {
+ content: "";
+ position: absolute;
+ width: 10px;
+ top: 4px;
+ left: 6px
+} 
